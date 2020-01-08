@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register:</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <script type="text/javascript" language="javascript" src="login.js"></script>
+        <h1 align="center">Register</h1>
+    <hr>
+    <div align="center">
+	<fieldset>
+	
+        <legend>NEW_REGISTRATION_FORM</legend>
+   
+        <table class="mydata">
+            <tr>
+                <td>First_Name:</td>
+                <td><input type="text" name="fname" placeholder="EnterFirstName"required class="mytxt"></td>
+            </tr>
+            <tr>
+                <td>Last_Name:</td>
+                <td><input type="text" name="lname" placeholder="EnterLastName"required  class="mytxt"></td>
+            </tr>
+            <tr>
+                <td>E-Mail:</td>
+                <td><input type="email" name="email" id="rg1" placeholder="Email" required  class="mytxt3"></td>
+            </tr>
+            <tr>
+                <td>Mobile_No:</td>
+                <td><input type="number" name="mobile" placeholder="Mob no" min="8000000000" max="9999999999"required  class="mytxt"></td>
+            </tr>
+            <tr> 
+                <td>Password:</td>
+                <td><input type="password"  placeholder="Password" id="rg2" required  class="mytxt4"></td>
+            </tr>
+            <tr>
+                <td>Date_Of_Birth:</td>
+                <td><input type="date" name="dob"required  class="mytxt"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" value="Male" checked>Male<br>
+                <input type="radio" name="gender" value="Female" >Female<br>
+                <input type="radio" name="gender" value="Other" >Other</td><br>
+            </tr>
+            <tr>
+                <td>Marital_Status:</td>
+                <td>
+                    <input type="radio" name="mstatus" value="Married"checked>Married<br>
+                    <input type="radio" name="mstatus" value="UnMarried">UnMarried<br>
+                    <input type="radio" name="mstatus" value="Divorced" >Divorced<br>
+                </td>
+            </tr>
+            <tr>
+                <td>Choose_City:</td>
+                <td>
+                    <select>
+                        <option value="city">Pune</option>
+                        <option value="city">Kolhapur</option>
+                        <option value="city">Solapur</option>
+                        <option value="city">Mumbai</option>
+                        <option value="city">Satara</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan ="2" align="center"><input type="submit" class="mysubmit"onclick="store()"></td>
+            </tr>
+
+        </table>
+   </fieldset>
+    </div>
+</body>
+</html>
